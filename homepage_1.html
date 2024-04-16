@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIFFUSUP-diffusion modeling software</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+    <meta name='keywprds' content='DIFFUSUP,diffusion model,Crank-Nicolson'>
+    <meta name='description' content='This is official website of DIFFUSUP'> 
+    <meta name='author' content='Junxing Chen'>
+    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='icon' type='imagine/x-icon' href='img/Icon.bmp'
+</head>
+
+<style>
+div#all_website_content {
+    visibility: visible;
+}
+</style>
+
+<body onresize=resize();>
+    <script> 
+        function resize(){
+            if((window.innerWidth>1260) | (document.getElementById("menu").style.right=='0')){
+            document.getElementById("menu").style.right = '0';}
+            if((window.innerWidth<=1260) & (document.getElementById("menu").style.right=='-100%')){
+            document.getElementById("menu").style.right = '-100%';}
+        }
+    </script>
+
+    <div id='all_website_content'>
+
+
+        <header>
+            <a href="homepage_1.html" class='logo'>
+                <img class='logo_img' src="img/icon_withname.png" height="50px">
+            </a>
+            <div class='navigation'>
+                <ul class = 'menu' id= 'menu'>
+                    <div class="close_btn" onmousedown="closemenu()" ></div>
+                    <li class='menu_item'><a href="About.html">About</a></li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="Download_page.html">Download</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="download/Instruction.pdf">Instruction</a></li>
+                            <li class='sub_item'><a href="download/DIFFUSUP_SUPPLEMENTARY.pdf">Theory</a></li>
+                            <li class='sub_item more'>
+                                <a>Installation</i></a>
+                                <ul class='more_menu'>
+                                    <li class='more_item'><a href="download/DIFFUSUP_V1.13_WIN_Installer.zip">Windows</a></li>
+                                    <li class='more_item'><a href="download/DIFFUSUP_V1.13_MAC_Installer.zip">MacOS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="Help.html">Support</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="Help.html#help_contact">Getting Help</a></li>
+                            <li class='sub_item'><a href="Help.html#help_example">Example</a></li>
+                            <li class='sub_item'><a href="Help.html#help_FAQ">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu_item'><a href="History.html">History</a></li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="mailto:junxing.chen@mail.utoronto.ca">Contact</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="mailto:junxing.chen@mail.utoronto.ca">E-mail</a></li>
+                            <li class='sub_item'><a href="http://jchen.space">Author</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <div class="open_btn" onmousedown="openmenu()"></div>
+                <script>
+                    function openmenu(){
+                        document.getElementById("menu").style.right = '0';
+                     }
+                     function closemenu(){
+                        document.getElementById("menu").style.right = '-100%';
+                     }
+                </script>
+                <noscript>
+                    <style>
+                        @media (max-width:1260px){
+                            header .navigation .menu{
+                                right:0;}}
+                    </style>
+                </noscript> 
+            </div>
+        </header> 
+
+
+        <main>
+            <div class='container'>
+                <div class="go-top">
+                   <a href="#"><img class= 'gotop' src="img/gotop.png"></a>
+                </div>
+                <div class="go-home">
+                   <a href="homepage_1.html"><img class= 'gohome' src="img/gohome.svg"></a>
+                </div>
+                <div class='shown_content'>
+                    <div id='home_top'>
+                        <div class='home_top_title'>
+                            <img class='logo_img' src="img/icon_high_resolution.png">
+                            <h1> DIFFUSUP </h1>   
+                        </div>
+                        <div class='home_introduction'>
+                            <p>Welcome to DIFFUSUP, the powerful software designed for conducting diffusion modeling. 
+                                Our user-friendly interface and advanced toolbox allow for the simulation of multi-component diffusions under various thermal and chemical conditions. 
+                                Our software is built using MATLAB and utilizes the precise Crank-Nicolson algorithm for accurate modeling. 
+                                DIFFUSUP is a standalone software that can be downloaded for free, making it accessible to anyone interested in diffusion modeling. 
+                                Start exploring the world of diffusion with DIFFUSUP today!
+                            </p>
+                        </div>
+                    </div>
+                    <div id='home_mid'>
+                        <div class='home_gif'>
+                            <img class='diffusion_gif' src="img/diffusion1.gif" >
+                            <img class='diffusion_gif' src="img/diffusion2.gif" >
+                        </div>
+                        <div class="home_download">
+                            <a  id='download_win_btn' href="download/DIFFUSUP_V1.13_WIN_Installer.zip"> <h2>Install <br> (WinOS)</h2></a>
+                            <a  id='download_mac_btn' href="download/DIFFUSUP_V1.13_MAC_Installer.zip"> <h2>Install <br> (MacOS)</h2></a>
+                            <a  id='download_page_btn' href="Download_page.html"> <h2>Learn<br>More</h2></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id='home_mid_2'>
+                        <a class="home_help_block" id='home_help_block_1' href="Help.html"><img src="img/Help_icon.svg" width='75px'><p>Help?</p></a>
+                        <a class="home_help_block" id='home_help_block_2' href="Help.html#help_example"><img src="img/Example_icon.svg" width='75px'><p>Example</p></a>
+                        <a class="home_help_block" id='home_help_block_3' href='Help.html#help_FAQ'><img src="img/FAQ_icon.svg" width='75px' ><p>FAQ</p></a>
+                    </div>
+
+                    <div id='home_end'>
+                        <div id='home_acknow'>
+                        <h2>Thanks</h2>
+                        <a class="contributor"> Xu,Chu, Yi Zou, Zhenhao Zhou, Ozan Akca</a>
+                        </div>   
+                        <h3>References:</h3>
+                        <a class="home_reference">You can download the paper <b>DIFFUSUP: A graphical user interface (GUI) software for diffusion modeling</b> from <a class="home_reference" href="https://www.sciencedirect.com/science/article/pii/S2590197424000041">This link</a>.</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+                <p class="text-center">Copyright © 2024 | <a href="homepage_1.html">Junxing Chen</a>. All rights reserved.</p>
+        </footer>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIFFUSUP-diffusion modeling software</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+    <meta name='keywprds' content='DIFFUSUP,diffusion model,Crank-Nicolson'>
+    <meta name='description' content='This is official website of DIFFUSUP'> 
+    <meta name='author' content='Junxing Chen'>
+    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='icon' type='imagine/x-icon' href='img/Icon.bmp'
+</head>
+
+<style>
+div#all_website_content {
+    visibility: visible;
+}
+</style>
+
+<body onresize=resize();>
+    <script> 
+        function resize(){
+            if((window.innerWidth>1260) | (document.getElementById("menu").style.right=='0')){
+            document.getElementById("menu").style.right = '0';}
+            if((window.innerWidth<=1260) & (document.getElementById("menu").style.right=='-100%')){
+            document.getElementById("menu").style.right = '-100%';}
+        }
+    </script>
+
+    <div id='all_website_content'>
+
+
+        <header>
+            <a href="homepage_1.html" class='logo'>
+                <img class='logo_img' src="img/icon_withname.png" height="50px">
+            </a>
+            <div class='navigation'>
+                <ul class = 'menu' id= 'menu'>
+                    <div class="close_btn" onmousedown="closemenu()" ></div>
+                    <li class='menu_item'><a href="About.html">About</a></li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="Download_page.html">Download</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="download/Instruction.pdf">Instruction</a></li>
+                            <li class='sub_item'><a href="download/DIFFUSUP_SUPPLEMENTARY.pdf">Theory</a></li>
+                            <li class='sub_item more'>
+                                <a>Installation</i></a>
+                                <ul class='more_menu'>
+                                    <li class='more_item'><a href="download/DIFFUSUP_V1.13_WIN_Installer.zip">Windows</a></li>
+                                    <li class='more_item'><a href="download/DIFFUSUP_V1.13_MAC_Installer.zip">MacOS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="Help.html">Support</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="Help.html#help_contact">Getting Help</a></li>
+                            <li class='sub_item'><a href="Help.html#help_example">Example</a></li>
+                            <li class='sub_item'><a href="Help.html#help_FAQ">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu_item'><a href="History.html">History</a></li>
+                    <li class='menu_item'>
+                        <a class ='sub_btn' href="mailto:junxing.chen@mail.utoronto.ca">Contact</i></a>
+                        <ul class='sub_menu'>
+                            <li class='sub_item'><a href="mailto:junxing.chen@mail.utoronto.ca">E-mail</a></li>
+                            <li class='sub_item'><a href="http://jchen.space">Author</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <div class="open_btn" onmousedown="openmenu()"></div>
+                <script>
+                    function openmenu(){
+                        document.getElementById("menu").style.right = '0';
+                     }
+                     function closemenu(){
+                        document.getElementById("menu").style.right = '-100%';
+                     }
+                </script>
+                <noscript>
+                    <style>
+                        @media (max-width:1260px){
+                            header .navigation .menu{
+                                right:0;}}
+                    </style>
+                </noscript> 
+            </div>
+        </header> 
+
+
+        <main>
+            <div class='container'>
+                <div class="go-top">
+                   <a href="#"><img class= 'gotop' src="img/gotop.png"></a>
+                </div>
+                <div class="go-home">
+                    <a href="homepage_1.html"><img class= 'gohome' src="img/gohome.svg"></a>
+                 </div>
+                <div class='shown_content'>
+                    <div id='download_title'><h1>Download</h1></div>
+                    <div class='download' id='Download_software'>
+                        <div id='download_title_btn'>
+                            <a class='dldbtn' href='download/DIFFUSUP_V1.13_WIN_Installer.zip'><img class='winmac_icon' src="img/Windows.png"><p>Download for windows system</p></a> 
+                            <a class='dldbtn' id='apple_href' href='download/DIFFUSUP_V1.13_MAC_Installer.zip'><img class='winmac_icon' src="img/apple.png"><p>Download for MacOS system</p></a>
+                        </div>
+                            <h2 class="dld_notice_title">Notice</h2>
+                            <p class="download_notice">
+                                1. For optimal performance in modeling, it is recommended to use a newer system such as Windows 7, 8, 10, 11, or macOS after El Capitan, as well as a modern CPU and sufficient RAM. A video card is not required for running DIFFUSUP.<br>
+                                2. To install and save files in DIFFUSUP, you will need at least 2GB of disk space.<br>  
+                                3. If you are using an M-series Mac, you will need Rosetta2 to run DIFFUSUP. &#129322;<br>  
+                                4. If you want the previous version of DIFFUSUP, please <a href=":mailto:junxing.chen@mail.utoronto.ca">contact the author</a>.</p>                           
+                    </div>
+                    <hr>
+                    <div class='download' id='Download_instruction'>
+                        <a class='dldbtn' href="download/Instruction.pdf"><h1>&#128214;</h1><p>Download the instruction</p></a>
+                        <h2 class="dld_notice_title">Instruction</h2>
+                        <p class="download_notice">1. <a href="download/Instruction.pdf">Download the instruction</a>, which is designed to help users become familiar with and operate the software. The instruction includes an example to help users get started.<br>
+                            2. After installing DIFFUSUP, the instruction file will be automatically installed in the same folder where you have stored the other DIFFUSUP files.</p>
+                    </div>
+                    <hr>
+                    <div class='download' id='Download_theory'>
+                        <a class='dldbtn' href="download/DIFFUSUP_SUPPLEMENTARY.pdf"><h1>&#128736;</h1><p>Download the theory</p></a>
+                        <h2 class="dld_notice_title">Theory</h2>
+                        <p class="download_notice">1. <a href="download/DIFFUSUP_SUPPLEMENTARY.pdf">Download the theory</a>, which includes detailed information about diffusion and the Crank-Nicolson algorithm, please visit the DIFFUSUP website and look for the link to download the theory file. The theory file is provided in PDF format and contains a lot of equations and mathematics, so it is recommended for users who want to learn more about diffusion modeling.<br>
+                            2. After installing DIFFUSUP, the theory PDF file will be automatically installed in the same folder where you have stored the other DIFFUSUP files.</p>
+                    </div>
+                    <hr>
+                    <div class='download' id='Download_paper'>
+                        <a class='dldbtn'><h1>&#128220;</h1><p>Reference paper</p></a>
+                        <p class="download_notice">You can download the paper <b>DIFFUSUP: A graphical user interface (GUI) software for diffusion modeling</b> from <a href="https://www.sciencedirect.com/science/article/pii/S2590197424000041">this link</a>.</p>
+                    </div>
+                    <hr>
+                    <div class='download' id='Download_code'>
+                        <a class='dldbtn' href="download/DIFFUSUP_V1.13_files.zip"><h1>&#128190;</h1><p>Download the MATLAB Code</p></a>
+                        <h2 class="dld_notice_title">Code</h2>
+                        <p class="download_notice">1. <a href="download/Functions.zip">Download the Crank-Nicolson functions. </a><br>
+                            The Crank-Nicolson functions are provided for users who are familiar with MATLAB programming and would like to apply the Crank-Nicolson function in their own code. <br>
+                            2. <a href="download/DIFFUSUP_V1.13_files.zip">Download the DIFFUSUP whole code set. </a><br>
+                            The DIFFUSUP code set written in MATLAB App Designer is provided for users who would like to view or modify the code behind the software.  </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer>
+            <hr>
+                <p class="text-center">Copyright © 2024 | <a href="homepage_1.html">Junxing Chen</a>. All rights reserved.</p>
+        </footer>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,60 @@
+DIFFUSUP
+Author: Junxing Chen (yxzhhw)
+contact me @:junxing.chen@mail.utoronto.ca
+
+V0.01-V0.02
+1. Fixed some bugs
+2. you can plot to generate the starting profile now
+
+V0.02-V0.03
+1. Fixed some bugs
+2. Added some error reminders
+
+V0.03-V0.04
+1. Added message boxes which appear when there are some errors in settings or input
+2. Added head menu bar for convinience
+3. You now have access to go to author's website or contact the author 
+
+V0.04-V0.05
+1. Added a progress bar during calculation
+
+V1.00
+This is a huge version update!
+1. Fixed some bugs
+2. Change garnet and carbonate into 4 and 3comp system
+3. Add 1,2comp system
+4. show ABCD representing element
+5. Add depedent element choice
+
+V1.01
+1.Fixed some bugs
+2.Modified the progress bar and it shows just after you click run now
+
+V1.02
+1.Fixed some bugs
+
+V1.03
+1.Fixed some bugs
+2.Add a icon for DIFFSUP 
+
+V1.10
+This is a huge version update!
+1. Upgraded the algorithm for boundary settings
+2. Simplified the calculation steps & the Running panel
+3. Fixed some bugs
+
+V1.11 
+1. add a tool to covert .mat to .xlsx
+2. fixed some bugs
+
+V1.12 
+1. Updated the instruction, supplementary file and the paper to submit
+2. Updated the words in the GUI panel
+3. fixed some bugs
+
+V1.13 
+1. Added functions to calculate chi-square
+2. Added functions to auto fit diffusion profiles
+3. Fixed some bugs
+4. Updated the format to save the result
+5. Added functions to save the log file
